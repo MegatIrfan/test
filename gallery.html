@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery with Slider</title>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="family.html">Family</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="hobbies.html">Hobbies</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Slider Section for Interest -->
+    <section class="gallery-slider">
+        <center><h1>Interest</h1></center>
+        <div class="slider-container" id="slider1">
+            <div class="slides">
+                <img src="photo/archery1.jpg" alt="Archery">
+                <img src="photo/archery2.jpg" alt="Archery">
+                <img src="photo/archery3.jpg" alt="Archery">
+                <img src="photo/archery4.jpg" alt="Archery">
+                <img src="photo/hiking1.jpg" alt="Hiking">
+                <img src="photo/hiking2.jpg" alt="Hiking">
+                <img src="photo/hiking3.jpg" alt="Hiking">
+                <img src="photo/hiking4.jpg" alt="Hiking">
+                <img src="photo/photo12.jpg" alt="Photography">
+                <img src="photo/photo13.jpg" alt="Photography">
+            </div>
+            <button class="prev" onclick="moveSlide(-1, 'slider1')">&#10094;</button>
+            <button class="next" onclick="moveSlide(1, 'slider1')">&#10095;</button>
+        </div>
+    </section>
+
+    <!-- Slider Section for Degree Life -->
+    <section class="gallery-slider">
+        <center><h1>Degree Life</h1></center>
+        <div class="slider-container" id="slider2">
+            <div class="slides">
+                <img src="photo/photo1.jpg" alt="Degree">
+                <img src="photo/photo2.jpg" alt="Degree">
+                <img src="photo/photo3.jpg" alt="Degree">
+                <img src="photo/photo4.jpg" alt="Degree">
+                <img src="photo/photo5.jpg" alt="Degree">
+                <img src="photo/photo6.jpg" alt="Degree">
+                <img src="photo/photo7.jpg" alt="Degree">
+                <img src="photo/photo8.jpg" alt="Degree">
+                <img src="photo/photo9.jpg" alt="Degree">
+                <img src="photo/photo10.jpg" alt="Degree">
+            </div>
+            <button class="prev" onclick="moveSlide(-1, 'slider2')">&#10094;</button>
+            <button class="next" onclick="moveSlide(1, 'slider2')">&#10095;</button>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2024 Portfolio. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

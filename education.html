@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education Journey</title>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: 'Manrope', sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .page-title {
+            text-align: center;
+            margin-bottom: 40px;
+            color: #333;
+            font-size: 2.5em;
+            font-weight: 700;
+        }
+        .bento-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            width: 100%;
+            max-width: 1200px;
+        }
+        .bento-item {
+            background-color: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+            text-align: center;
+        }
+        .bento-item:hover {
+            transform: scale(1.03);
+        }
+        .bento-image {
+            width: 40%;
+            object-fit: cover;
+        }
+        .bento-content {
+            padding: 20px;
+        }
+        .bento-title {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+            color: #333;
+        }
+        .bento-subtitle {
+            font-size: 1.1em;
+            color: #666;
+            margin-bottom: 10px;
+        }
+        .bento-description {
+            color: #888;
+            line-height: 1.6;
+        }
+        .uitm-item {
+            grid-column: span 2;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="family.html">Family</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="hobbies.html">Hobbies</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1 class="page-title">Education Journey</h1>
+        <div class="bento-grid">
+            <div class="bento-item">
+                <img src="photo/sk-rendah.jpg" alt="SK Seri Ampang" class="bento-image">
+                <div class="bento-content">
+                    <h2 class="bento-title">SK Seri Ampang</h2>
+                    <h3 class="bento-subtitle">Primary School</h3>
+                    <p class="bento-description">Foundational years of learning, building core academic and social skills.</p>
+                </div>
+            </div>
+
+            <div class="bento-item">
+                <img src="photo/sk-menengah.jpg" alt="SMK Gunung Rapat" class="bento-image">
+                <div class="bento-content">
+                    <h2 class="bento-title">SMK Gunung Rapat</h2>
+                    <h3 class="bento-subtitle">Secondary School</h3>
+                    <p class="bento-description">Developing critical thinking and exploring personal interests and potential.</p>
+                </div>
+            </div>
+
+            <div class="bento-item uitm-item">
+                <img src="photo/uitm-campus.jpg" alt="UiTM Campus" class="bento-image">
+                <div class="bento-content">
+                    <h2 class="bento-title">Universiti Teknologi MARA (UiTM)</h2>
+                    <h3 class="bento-subtitle">Degree in Library Science</h3>
+                    <p class="bento-description">Pursuing a passion for organizing information and making knowledge accessible. Focusing on innovative approaches to information management and library sciences.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html> 

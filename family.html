@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Family</title>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="family.html">Family</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="hobbies.html">Hobbies</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Family Gallery -->
+    <div class="family-gallery">
+        <div class="slides">
+            <img src="photo/family.jpg" alt="Family Photo 1">
+           
+        </div>
+        <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+        <button class="next" onclick="moveSlide(1)">&#10095;</button>
+    </div>
+
+    <!-- Family Section -->
+    <section class="family">
+        <h1>My Family</h1>
+        <p>This is my family. We are a family of six, although my older brother is currently out of town for work, so he isn't in this picture. In the photo, you can see my father, my mother, my younger brother, my little sister, and myself. Each member of my family holds a special place in my heart, and even though my older brother couldn't join us, we always feel his presence in spirit.</p>
+    </section>
+
+    <footer>
+        <p>© 2024 Portfolio. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

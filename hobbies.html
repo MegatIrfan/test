@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hobbies and Interests</title>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="family.html">Family</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="hobbies.html">Hobbies</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Gallery Slider -->
+    <section class="gallery-slider">
+       
+        <div class="slider-container" id="slider1">
+            <div class="slides">
+                <img src="photo/archery1.jpg" alt="Archery">
+                <img src="photo/archery2.jpg" alt="Archery">
+                <img src="photo/archery3.jpg" alt="Archery">
+                <img src="photo/archery4.jpg" alt="Archery">
+                <img src="photo/hiking1.jpg" alt="Hiking">
+                <img src="photo/hiking2.jpg" alt="Hiking">
+                <img src="photo/hiking3.jpg" alt="Hiking">
+                <img src="photo/hiking4.jpg" alt="Hiking">
+                <img src="photo/photo12.jpg" alt="Photography">
+                <img src="photo/photo13.jpg" alt="Photography">
+            </div>
+            <button class="prev" onclick="moveSlide(-1, 'slider1')">&#10094;</button>
+            <button class="next" onclick="moveSlide(1, 'slider1')">&#10095;</button>
+        </div>
+    </section>
+
+    <section class="hobbies">
+        <h1>Hobbies and Interests</h1>
+        <p>I have a wide range of hobbies and activities that I am passionate about. One of my favorite pastimes is <strong>archery</strong>, a sport I have enjoyed since the age of 10. Over the years, it has become more than just a hobby for me, it’s a discipline that has taught me focus, patience, and precision.</p>
+
+        <p>In addition to archery, I have a great love for the outdoors, and <strong>hiking</strong> is one of my go-to activities. I often go on hiking trips with friends, exploring nature and challenging myself with new trails and terrains. These adventures not only allow me to stay active but also provide an opportunity to bond with my companions and appreciate the beauty of the environment.</p>
+
+        <p>Another activity I am deeply interested in is <strong>photography</strong>. Capturing moments through the lens has always fascinated me, whether it’s scenic landscapes during hikes or candid moments with friends and family. Photography allows me to express creativity and preserve memories in a meaningful way.</p>
+
+        <p>Together, these hobbies reflect my love for physical activity, nature, and artistic expression, and they play an essential role in enriching my life.</p>
+    </section>
+
+    <footer>
+        <p>© 2024 Portfolio. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

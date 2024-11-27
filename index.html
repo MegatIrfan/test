@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aiman Iskandar - Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Manrope', sans-serif;
+        }
+
+        body {
+           
+            background-color: #f4f4f4;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 2rem;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        header {
+            width: 100%;
+            max-width: 1200px;
+            margin-bottom: 1rem;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style-type: none;
+            background-color: white;
+            padding: 1rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            margin-bottom: 1rem;
+        }
+
+        nav ul li {
+            margin: 0 1rem;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #171716;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #963f1c;
+        }
+
+        .bento-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1rem;
+            max-width: 1200px;
+            width: 100%;
+        }
+
+        .bento-item {
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            padding: 1.5rem;
+            transition: transform 0.3s ease;
+        }
+
+        .bento-item:hover {
+            transform: scale(1.02);
+        }
+
+        .profile {
+            grid-column: span 2;
+            grid-row: span 2;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .profile img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 1rem;
+            color: #f75c1e;
+        }
+
+        .contact {
+            grid-column: span 2;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color:  #a13c15;
+            color: white;
+        }
+
+        .biodata {
+            grid-column: span 2;
+        }
+
+        .education {
+            grid-column: span 2;
+        }
+
+        .skills {
+            grid-column: span 2;
+            background-color: #f8f9fa;
+        }
+
+        .contact-btn {
+            background-color: white;
+            color: #9b3a13;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 25px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .contact-btn:hover {
+            background-color: #f0f0f0;
+        }
+
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+
+        .skill-tag {
+            background-color: #e9ecef;
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+        }
+
+        @media (max-width: 768px) {
+            .bento-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .profile, .contact, .biodata, .education, .skills {
+                grid-column: span 1;
+            }
+
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav ul li {
+                margin: 0.5rem 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="family.html">Family</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="hobbies.html">Hobbies</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="bento-grid">
+        <div class="bento-item profile">
+            <img src="me.jpg" alt="Muhammad Aiman Iskandar">
+            <h1>Muhammad Aiman Iskandar</h1>
+            <h2>Library Science Student</h2>
+            <p>Passionate about organizing information and making knowledge accessible</p>
+        </div>
+
+        <div class="bento-item contact">
+            <h2>Get in Touch</h2>
+            <button class="contact-btn" onclick="location.href='mailto:iskandaraiman17@gmail.com';">
+                Contact Me
+            </button>
+        </div>
+
+        <div class="bento-item biodata">
+            <h2>Personal Details</h2>
+            <p><strong>Full Name:</strong> Muhammad Aiman Iskandar bin Zolfa</p>
+            <p><strong>Date of Birth:</strong> 22 September 2002</p>
+            <p><strong>Place of Birth:</strong> Ipoh, Perak</p>
+            <p><strong>Age:</strong> 22 years old</p>
+        </div>
+
+        <div class="bento-item education">
+            <h2>Education</h2>
+            <h3>Universiti Teknologi MARA (UiTM)</h3>
+            <p>Degree of Library Science</p>
+            <p>Last Year of Degree Program</p>
+        </div>
+
+        <div class="bento-item skills">
+            <h2>Skills</h2>
+            <div class="skills-list">
+                <span class="skill-tag">Cataloging and Classification</span>
+                <span class="skill-tag">Database Management</span>
+                <span class="skill-tag">Research and Information Retrieval</span>
+                <span class="skill-tag">Customer Services and Communication</span>
+                <span class="skill-tag">Information Organization</span>
+                <span class="skill-tag">Team Collaboration</span>   
+        </div>
+    </div>
+</body>
+</html>
